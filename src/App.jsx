@@ -1,6 +1,5 @@
 import "./assets/styles/style.css";
 import Contact from "./components/Contact/Contact";
-import { ArrowButton } from "./components/components.styles";
 import Footer from "./layout/Footer";
 import "remixicon/fonts/remixicon.css";
 import Header from "./layout/Header";
@@ -9,10 +8,11 @@ import { useEffect, useState } from "react";
 import ScrollTopBtn from "./components/ScrollTopBtn";
 import Faq from "./components/FAQ/Faq";
 import About from "./components/About/About";
+import Register from "./components/Register/Register";
 
 function App() {
   const [scrollVisible, setScrollVisible] = useState(false);
-
+  const [activeModal, setActiveModal] = useState(false);
   const handleScroll = () => {
     window.scrollY > 100 ? setScrollVisible(true) : setScrollVisible(false);
   };
@@ -24,8 +24,9 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero setActiveModal={setActiveModal} />
       <About />
+      <Register activeModal={activeModal} setActiveModal={setActiveModal} />
       <Faq />
       <Contact />
       {scrollVisible ? <ScrollTopBtn /> : ""}

@@ -1,0 +1,64 @@
+#register {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  width: 100%;
+  background-color: #000000ac;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .register__container {
+    padding: 40px 80px;
+    height: fit-content;
+    display: flex;
+    background-color: $white-color;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    gap: 20px;
+    position: relative;
+    #close-register {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.7rem;
+      color: $secondary-color;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      color: $primary-color;
+      font-weight: 600;
+      padding: 0 0 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        width: 100%;
+        box-shadow: none;
+        border-bottom: 1px solid $primary-color;
+        border-radius: 0;
+        &:focus {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.register-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
