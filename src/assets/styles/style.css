@@ -901,6 +901,74 @@ body {
   visibility: visible !important;
 }
 
+@media screen and (max-width: 600px) {
+  #register {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6745098039);
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #register .register__container {
+    padding: 40px 0px;
+    box-sizing: border-box;
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    gap: 20px;
+    position: relative;
+  }
+  #register .register__container #close-register {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.7rem;
+    color: #253745;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  #register .register__container #close-register:hover {
+    opacity: 0.6;
+  }
+  #register .register__container h1 {
+    font-size: 2rem;
+    color: #32c36c;
+    font-weight: 600;
+    padding: 0 0 20px;
+    text-align: center;
+  }
+  #register .register__container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #register .register__container form input {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #32c36c;
+    border-radius: 0;
+  }
+  #register .register__container form input:focus {
+    border-color: transparent;
+  }
+  .register-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
 header {
   display: flex;
   justify-content: center;
