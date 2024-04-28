@@ -5,7 +5,7 @@ function ContactInfo() {
     {
       image: "ri-map-pin-line",
       title: "Address:",
-      infos: ["Baku", "Azerbaijan"],
+      infos: ["Baku, Azerbaijan"],
     },
     {
       image: "ri-mail-line",

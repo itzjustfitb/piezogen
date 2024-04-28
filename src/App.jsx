@@ -26,7 +26,7 @@ function App() {
       <Header />
       <Hero setActiveModal={setActiveModal} />
       <About />
-      <Register activeModal={activeModal} setActiveModal={setActiveModal} />
+      {/* <Register activeModal={activeModal} setActiveModal={setActiveModal} /> */}
       <Faq />
       <Contact />
       {scrollVisible ? <ScrollTopBtn /> : ""}

@@ -79,3 +79,88 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  #faq {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $surface-color;
+    .faq__container {
+      width: 80%;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      .faq__top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        h1 {
+          color: $primary-color;
+          font-weight: 600;
+          font-size: 1.375rem;
+        }
+        p {
+          color: $secondary-color;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+      .faq__bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .faq__row {
+          width: 100%;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          .faq__dropdown-main {
+            cursor: pointer;
+            padding: 20px;
+            font-weight: 800;
+            color: $primary-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i {
+              font-size: 1.3rem;
+              transition: 0.4s;
+            }
+          }
+          .faq__dropdown {
+            border-top: 1px solid $surface-color;
+            padding: 0px;
+            height: 0;
+            transition: 0.3s;
+            visibility: hidden;
+            height: 0;
+            padding: 0 20px;
+            color: $secondary-color;
+            overflow: hidden;
+          }
+        }
+        .active-faq {
+          .faq__dropdown-main {
+            i {
+              transform: rotate(45deg);
+            }
+          }
+          .faq__dropdown {
+            padding: 20px;
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
