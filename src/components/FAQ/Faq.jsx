@@ -5,24 +5,19 @@ function Faq() {
 
   const faqs = [
     {
-      question: "Question 1",
+      question: "What is piezoelectric?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Molestias, deleniti.",
+        "Piezoelectric is a material that converts mechanical energy into electrical energy. This change causes electric fields outside the material. Piezoelectric sensors can accurately detect small pressures and generate electrical energy. These practical and important materials feature a fascinating and unique physical property: they react to mechanical stress by generating a voltage. It was back in the 1880s that scientists first detected this phenomenon in certain types of crystals.",
     },
     {
-      question: "Question 2",
+      question: "Where it can be applied?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Molestias, deleniti.",
+        "Piezoelectric materials have become an important technology used in many different industries today. Our job is to install our products mainly in places with high human density (educational institutions, gyms, private facilities).",
     },
     {
-      question: "Question 3",
+      question: "Where can we use the converted energy?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Molestias, deleniti.",
-    },
-    {
-      question: "Question 4",
-      answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Molestias, deleniti.",
+        "The use of the energy obtained by applying the method depends entirely on the requirements and can be used for different purposes.",
     },
   ];
 

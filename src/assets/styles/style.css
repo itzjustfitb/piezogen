@@ -441,6 +441,7 @@ body {
   visibility: hidden;
   height: 0;
   padding: 0 20px;
+  color: #253745;
   overflow: hidden;
 }
 #faq .faq__container .faq__bottom .active-faq .faq__dropdown-main i {
@@ -450,8 +451,7 @@ body {
   padding: 20px;
   opacity: 1;
   visibility: visible;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 #about {
