@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="contact__container">
-        <div className="contact__top">
+        <div className="contact__top" data-aos="fade-up">
           <h3>Contact Us</h3>
           <h1>Have a question? Contact us</h1>
         </div>

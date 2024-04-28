@@ -20,7 +20,7 @@ function ContactInfo() {
   ];
 
   return (
-    <aside className="contact__info" data-aos="slide-right">
+    <aside className="contact__info" data-aos="fade-right">
       {contacts.map((contact, index) => {
         return (
           <div key={index} className="contact__info-row">

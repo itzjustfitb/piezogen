@@ -24,11 +24,11 @@ function Faq() {
   return (
     <section id="faq">
       <div className="faq__container">
-        <div className="faq__top">
+        <div className="faq__top" data-aos="fade-up">
           <h1>FAQ</h1>
           <p>Frequently asked questions</p>
         </div>
-        <div className="faq__bottom">
+        <div className="faq__bottom" data-aos="fade-up">
           {faqs.map((faq, index) => (
             <div
               key={index}

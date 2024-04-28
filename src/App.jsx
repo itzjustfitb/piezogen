@@ -9,6 +9,9 @@ import ScrollTopBtn from "./components/ScrollTopBtn";
 import Faq from "./components/FAQ/Faq";
 import About from "./components/About/About";
 import Register from "./components/Register/Register";
+import Services from "./components/Services/Services";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [scrollVisible, setScrollVisible] = useState(false);
@@ -19,16 +22,20 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  });
+
+    Aos.init();
+  }, []);
 
   return (
     <>
       <Header />
       <Hero setActiveModal={setActiveModal} />
       <About />
-      <Register activeModal={activeModal} setActiveModal={setActiveModal} />
+      <Services />
       <Faq />
       <Contact />
+
+      <Register activeModal={activeModal} setActiveModal={setActiveModal} />
       {scrollVisible ? <ScrollTopBtn /> : ""}
       <Footer />
     </>

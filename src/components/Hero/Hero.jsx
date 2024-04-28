@@ -7,7 +7,7 @@ function Hero({ setActiveModal }) {
     <section id="hero">
       <HeroSocials />
       <div className="hero__container">
-        <div className="hero__left" data-aos="slide-right">
+        <div className="hero__left" data-aos="fade-right">
           <div className="hero__title">
             <h1>Lorem, ipsum.</h1>
             <span>
@@ -26,7 +26,7 @@ function Hero({ setActiveModal }) {
             </a>
           </div>
         </div>
-        <div className="hero__right">
+        <div className="hero__right" data-aos="fade-left">
           <img src={heroImage} alt="Hero Image" />
         </div>
       </div>

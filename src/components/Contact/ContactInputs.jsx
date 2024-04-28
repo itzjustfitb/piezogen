@@ -7,7 +7,7 @@ import {
 
 function ContactInputs() {
   return (
-    <div className="contact__inputs" data-aos="slide-left">
+    <div className="contact__inputs" data-aos="fade-left">
       <div className="contact__inputs-row">
         <DefaultInput placeholder="Name" type="text" />
         <DefaultInput placeholder="E-mail" type="text" />

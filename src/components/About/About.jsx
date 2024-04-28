@@ -5,10 +5,10 @@ function About() {
     <section id="about">
       <div className="about__container">
         <div className="about__bottom">
-          <div className="about__container-image">
+          <div className="about__container-image" data-aos="fade-right">
             <img src={aboutImage} alt="" />
           </div>
-          <div className="about__container-content">
+          <div className="about__container-content" data-aos="fade-left">
             <h1 className="about__container-header">About Us</h1>
             <p>
               PİEZOGEN LTD is a piezoelectric-based supplier and installation
