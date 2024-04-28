@@ -133,6 +133,7 @@ header {
         .hamburger-react {
           color: $primary-color;
           z-index: 100;
+          display: flex;
         }
       }
       button {

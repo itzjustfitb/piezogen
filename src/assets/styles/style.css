@@ -1044,6 +1044,9 @@ body {
   cursor: pointer;
   font-size: 25px;
   width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   border-radius: 50%;
   border: 2px solid #000;
@@ -1196,6 +1199,7 @@ header .header__container button {
   header .header__container .header__buttons .hamburger-react {
     color: #32c36c;
     z-index: 100;
+    display: flex;
   }
   header .header__container button {
     padding: 10px;
