@@ -1,0 +1,38 @@
+.night__mode-button {
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid $secondary-color;
+  transition: 0.4s;
+  width: 60px !important;
+  height: 30px;
+  padding: 0 5px;
+  position: relative;
+  background-color: $secondary-color;
+  &:hover {
+    opacity: 1 !important;
+  }
+  i {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $white-color;
+    color: $secondary-color;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 1rem !important;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.night__mode-button-active {
+  border-color: $primary-color;
+  background-color: $primary-color;
+  i {
+    background-color: $white-color;
+    color: $primary-color;
+    left: 55%;
+  }
+}

@@ -1,0 +1,30 @@
+// TODO ------- ABSTRACTS -------
+@import "./sass/abstracts/colors";
+
+// TODO ------- BASE -------
+@import "./sass/base/typography";
+@import "./sass/base/reset";
+@import "./sass/base/animations";
+
+// TODO ------- COMPONENTS -------
+@import "./sass/components/contact";
+@import "./sass/components/scrollTopBtn";
+@import "./sass/components/hero";
+@import "./sass/components/heroSocials";
+@import "./sass/components/faq";
+@import "./sass/components/about";
+
+// TODO ------- LAYOUT -------
+@import "./sass/layout/header";
+@import "./sass/layout/footer";
+@import "./sass/components/nightModeBtn";
+
+// TODO ------- PAGES -------
+@import "./sass/pages/home";
+::-webkit-scrollbar {
+  background-color: $white-color;
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+}

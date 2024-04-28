@@ -1,0 +1,27 @@
+@keyframes moveRight {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes moveTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spineer {
+  from {
+    box-shadow: 0 0 0 0 rgb(50, 195, 108, 0.988);
+  }
+  to {
+    box-shadow: 0 0 0 45px rgba(255, 161, 34, 0.01);
+  }
+}
