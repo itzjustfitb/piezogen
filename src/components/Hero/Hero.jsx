@@ -9,7 +9,7 @@ function Hero({ setActiveModal }) {
       <div className="hero__container">
         <div className="hero__left" data-aos="fade-right">
           <div className="hero__title">
-            <h1>Lorem, ipsum.</h1>
+            <h1>Welcome to</h1>
             <span>
               <Typewriter
                 words={["PiezoGen", "PiezoGen", "PiezoGen"]}
@@ -18,7 +18,7 @@ function Hero({ setActiveModal }) {
               />
             </span>
           </div>
-          <p>Welcome, the transition to the Digital World begins here.</p>
+          <p>Energy under your feet</p>
           <div className="hero__buttons">
             <DefaultBtn>Join Us</DefaultBtn>
             <a onClick={() => setActiveModal(true)} href="#">

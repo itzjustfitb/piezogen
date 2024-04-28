@@ -46,6 +46,9 @@ header {
       display: flex;
       align-items: center;
       gap: 20px;
+      .hamburger-react {
+        display: none;
+      }
     }
     button {
       padding: 10px;

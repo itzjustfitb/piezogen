@@ -1110,6 +1110,9 @@ header .header__container .header__buttons {
   align-items: center;
   gap: 20px;
 }
+header .header__container .header__buttons .hamburger-react {
+  display: none;
+}
 header .header__container button {
   padding: 10px;
   font-size: 1rem;
